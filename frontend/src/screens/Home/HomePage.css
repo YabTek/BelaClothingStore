@@ -1,0 +1,27 @@
+.main {
+    min-height: 93vh;
+    background-image: url('../../images/bg.png');
+    background-position: center;
+    background-size: cover;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+.heading {
+    font-weight: bolder;
+    text-align: center;
+}
+.card {
+    width: 220px;
+    margin-bottom: 30px;
+} 
+.card-body {
+   text-align: center;
+}
+
+
+.card-img {
+    width: 220px;
+    height: 190px;
+    
+}

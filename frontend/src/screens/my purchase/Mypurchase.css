@@ -1,0 +1,10 @@
+.main {
+    background-image: url('../../images/bg2.png');
+    background-position: center;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.heading {
+    font-weight: bolder;
+}

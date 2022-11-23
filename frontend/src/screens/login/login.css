@@ -1,0 +1,14 @@
+.main {
+    min-height: 93vh;
+    background-image: url('../../images/bg2.png');
+    background-position: center;
+    background-size: cover;
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 90px;
+    
+}
+.log-button {
+    width: 300px;
+    margin-left: 25%;
+}
