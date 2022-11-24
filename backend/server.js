@@ -4,21 +4,13 @@ const clothes = require('./data/clothdata')
 const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const userRoute = require('./routes/userRoute')
+const connectDB = require('./config/db')
 
+app.use(express.json())
 
 dotenv.config();
-
-    try {
-       mongoose.connect(process.env.MONGO_URI, {
-        useUnifiedTopology: true,
-        useNewUrlParser: true,
-      },
-      console.log(`MongoDB Connected`)
-      );
-    } catch (error) {
-      console.error(`Error: ${error.message}`);
-      process.exit();
-    }
+connectDB();
+  
 
 app.get('/',(req,res) =>{
     res.send('hello world')
