@@ -40,7 +40,7 @@ const logUser = asyncHandler(async(req,res) =>{
 
         }
         else{
-            throw new Error('You can not login');
+            throw new Error('Invalid email or password');
         }
 });
 
