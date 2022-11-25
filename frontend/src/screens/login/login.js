@@ -28,6 +28,8 @@ const LoginPage = () => {
       console.log(data)
       localStorage.setItem('userInfo',JSON.stringify(data))
       setLoading(false)
+      localStorage.setItem("userInfo",JSON.stringify(data))
+
     } catch (error) {
         setError('Invalid email or password')
     }

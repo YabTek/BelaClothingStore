@@ -29,7 +29,8 @@ const SignupPage = () => {
       },config
 
       )
-      setLoading(false)
+      setLoading(false);
+      localStorage.setItem("userInfo",JSON.stringify(data))
      } catch (error) {
       setError('user already exist')
      } 
