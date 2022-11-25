@@ -31,6 +31,6 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
 };
 
 
-const User = mongoose.model('users',userSchema)
+const User = mongoose.model('usercontrol',userSchema)
 
 module.exports = User

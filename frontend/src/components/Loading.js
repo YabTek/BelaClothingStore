@@ -1,7 +1,7 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
 
-function Loading({ size = 100 }) {
+function Loading({ size = 80 }) {
   return (
     <div
       style={{
@@ -10,6 +10,7 @@ function Loading({ size = 100 }) {
         alignItems: "center",
         width: "100%",
         height: "100%",
+        padding: "20px"
       }}
     >
       <Spinner
