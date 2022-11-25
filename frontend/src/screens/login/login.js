@@ -4,6 +4,7 @@ import { MDBContainer,MDBInput, MDBCheckbox, MDBBtn,}
   from 'mdb-react-ui-kit';
 import axios from 'axios';
 import Loading from "../../components/Loading";
+import ErrorMessage from '../../components/ErrorMessage';
 
 
 const LoginPage = () => {
@@ -28,12 +29,15 @@ const LoginPage = () => {
       localStorage.setItem('userInfo',JSON.stringify(data))
       setLoading(false)
     } catch (error) {
-       
+        setError('Invalid email or password')
     }
+    setLoading(false)
 
   }
   return ( 
     <div className  = "main">
+       {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+
       {loading && <Loading/>}
     <MDBContainer className="  d-flex flex-column w-50">
 
