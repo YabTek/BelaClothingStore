@@ -8,13 +8,15 @@ const Header = () => {
   
   return (
     <div className='App-header'>
-      <img className = "App-logo" src = {image} alt = ""/>
+      <img src = {`http://localhost:5000/images/cloth1.png`}/>
+
+      {/* <img className = "App-logo" src = {image} alt = ""/> */}
       <Navbar className = "links">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">My purchases</Nav.Link>
+            <Nav.Link href="/mypurchase">My purchases</Nav.Link>
             <NavDropdown title="My profile" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Edit</NavDropdown.Item>
               <NavDropdown.Divider />

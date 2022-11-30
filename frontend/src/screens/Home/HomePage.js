@@ -2,7 +2,7 @@ import { React,  useEffect, useState } from 'react'
 import './HomePage.css'
 import {Container,Row,Col, Card} from 'react-bootstrap'
 import axios from 'axios'
-
+//const clothes = require('../../data/clothdata')
 
 const HomePage = () => {
     const [clothes, setClothes] = useState([])
@@ -26,7 +26,7 @@ const HomePage = () => {
                 {clothes.map((item, k) => (
                     <Col key={k} xs={12} md = {4} lg = {3}>
                         <Card className= "card">
-                            <Card.Img className = "card-img" src={item.img} />
+                            <Card.Img className = "card-img" src= {item.img} />
 
                             <Card.Body className='card-body'>
                             <Card.Title>price:{item.price}</Card.Title>
