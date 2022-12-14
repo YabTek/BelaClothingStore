@@ -8,9 +8,7 @@ const Header = () => {
   
   return (
     <div className='App-header'>
-      <img src = {`http://localhost:5000/images/cloth1.png`}/>
-
-      {/* <img className = "App-logo" src = {image} alt = ""/> */}
+      <img className = "App-logo" src = {image} alt = ""/>
       <Navbar className = "links">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

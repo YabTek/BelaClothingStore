@@ -8,14 +8,14 @@ const HomePage = () => {
     const [clothes, setClothes] = useState([])
 
     const fetchCloth = async() =>{
-       const {data} = await axios.get('/api/clothes')
-       setClothes(data)
+       const cloth = await axios.get('/clothes')
+       setClothes(cloth.data)
+
     }
-    console.log(clothes)
     
     useEffect(() =>{
           fetchCloth();
-    },[])
+    })
 
   return (
     <div className = "main">
@@ -23,11 +23,11 @@ const HomePage = () => {
       <Container>
 
             <Row>
-                {clothes.map((item, k) => (
-                    <Col key={k} xs={12} md = {4} lg = {3}>
+                {clothes.map((item) => (
+                    <Col  xs={12} md = {4} lg = {3}>
                         <Card className= "card">
                             <Card.Img className = "card-img" src= {item.img} />
-
+                            {console.log(item.img)}
                             <Card.Body className='card-body'>
                             <Card.Title>price:{item.price}</Card.Title>
                                 <Card.Text>size:{item.size}</Card.Text>
