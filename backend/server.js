@@ -5,7 +5,6 @@ const userRoute = require('./routes/userRoute')
 const userCrudRoute = require('./routes/userCrudRoute')
 const clothRoute = require('./routes/clothRoute')
 const connectDB = require('./config/db')
-const clothes = require('./data/clothdata')
 
 
 app.use(express.json())

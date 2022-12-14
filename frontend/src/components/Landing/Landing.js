@@ -1,10 +1,10 @@
 import React from 'react'
-import './LandingPage.css'
+import './Landing.css'
 import {Container,Row,Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 const image = require('../../images/home.png')
 
-const LandingPage = () => {
+const Landing = () => {
   return (
     <div className = "mainPage">
       <img className = "home-img" src = {image} />
@@ -31,4 +31,4 @@ const LandingPage = () => {
   )
 }
 
-export default LandingPage
+export default Landing

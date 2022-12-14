@@ -1,8 +1,7 @@
-import './App.css';
 import './bootstrap.min.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import LandingPage from './components/LandingPage/LandingPage';
+import Landing from './components/Landing/Landing';
 import LoginPage from './screens/login/login';
 import SignupPage from './screens/signup/signup';
 import MypurchasePage from './screens/my purchase/Mypurchase';
@@ -15,7 +14,7 @@ function App() {
     <Header/>
     <BrowserRouter>
     <Routes>
-      <Route path = "/" element= {<LandingPage/>}/>
+      <Route path = "/" element= {<Landing/>}/>
       <Route path = "/home" element= {<HomePage/>}/>
       <Route path = "/login" element= {<LoginPage/>}/>
       <Route path = "/signup" element= {<SignupPage/>}/>

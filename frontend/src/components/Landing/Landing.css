@@ -7,6 +7,11 @@
     background-color: pink
   
   }
+.home-img {
+    margin: 55px;
+    height: 650px;
+  }
+
 .title {
     font-size: 50px;
     font-weight: bold;
