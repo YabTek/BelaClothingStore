@@ -5,8 +5,9 @@ const userRoute = require('./routes/userRoute')
 const userCrudRoute = require('./routes/userCrudRoute')
 const clothRoute = require('./routes/clothRoute')
 const connectDB = require('./config/db')
+const morgan = require('morgan')
 
-
+app.use(morgan("dev"))
 app.use(express.json())
 
 dotenv.config();

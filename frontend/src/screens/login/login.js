@@ -1,4 +1,6 @@
-import {useState,React} from 'react'
+import {useState,React, useEffect} from 'react'
+import { useNavigate } from 'react-router-dom';
+
 import './login.css'
 import { MDBContainer,MDBInput, MDBCheckbox, MDBBtn,}
   from 'mdb-react-ui-kit';
@@ -12,7 +14,9 @@ const LoginPage = () => {
   const [password,setPassword] = useState("")
   const [error,setError] = useState("")
   const [loading,setLoading] = useState(false)
+  const navigate = useNavigate();
 
+  
   const handleClick= async(e)=>{
     e.preventDefault()
     try {
@@ -22,14 +26,18 @@ const LoginPage = () => {
         }
       }
       setLoading(true)
-      const {data} = await axios.post('/api/users/login',{
+      const {data} = await axios.post('users/login',{
         email,password
       },config);
       console.log(data)
       localStorage.setItem('userInfo',JSON.stringify(data))
       setLoading(false)
       localStorage.setItem("userInfo",JSON.stringify(data))
-
+      
+      const userInfo = localStorage.getItem("userInfo")
+      if(userInfo){
+      navigate("/home")
+    }
     } catch (error) {
         setError('Invalid email or password')
     }

@@ -24,11 +24,13 @@ const SignupPage = () => {
         }
       }
       setLoading(true)
-      const {data} = await axios.post('/api/users',{
+      const {data} = await axios.post('users/register',{
         name,email,password
       },config
 
+
       )
+      console.log(data)
       setLoading(false);
       localStorage.setItem("userInfo",JSON.stringify(data))
      } catch (error) {
