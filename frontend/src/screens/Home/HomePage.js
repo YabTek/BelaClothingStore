@@ -1,4 +1,5 @@
 import { React,  useEffect, useState } from 'react'
+import Header from '../../components/Header/Header'
 import './HomePage.css'
 import {Container,Row,Col, Card} from 'react-bootstrap'
 import axios from 'axios'
@@ -18,10 +19,11 @@ const HomePage = () => {
     })
 
   return (
-    <div className = "main">
+    <>
+   <Header/>
+    <div className = "main">  
       <h1 className = ' heading'>Be modern with our clothes</h1>
       <Container>
-
             <Row>
                 {clothes.map((item) => (
                     <Col  xs={12} md = {4} lg = {3}>
@@ -39,6 +41,7 @@ const HomePage = () => {
             </Row>
         </Container>
     </div>
+    </>
   )
 }
 

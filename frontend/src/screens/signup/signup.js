@@ -1,4 +1,6 @@
 import {React,useState} from 'react'
+import { useNavigate } from 'react-router-dom';
+import Header2 from '../../components/Header2/Header2'
 import {MDBContainer,MDBInput,MDBBtn,} from 'mdb-react-ui-kit';
 import axios from 'axios';
 import Loading from "../../components/Loading";
@@ -12,6 +14,7 @@ const SignupPage = () => {
   const [password,setPassword] = useState("")
   const [error,setError] = useState("")
   const [loading,setLoading] = useState("")
+  const navigate = useNavigate()
 
 
   const handleClick = async(e)=>{
@@ -33,6 +36,10 @@ const SignupPage = () => {
       console.log(data)
       setLoading(false);
       localStorage.setItem("userInfo",JSON.stringify(data))
+      const userInfo = localStorage.getItem("userInfo")
+      if(userInfo){
+      navigate("/login")
+    }
      } catch (error) {
       setError('user already exist')
      } 
@@ -41,6 +48,9 @@ const SignupPage = () => {
   }
 
   return (
+    <>
+    <Header2/>
+    
     <div className = "main">
       {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
 
@@ -53,6 +63,7 @@ const SignupPage = () => {
       <MDBBtn className=" log-button mb-4" onClick={handleClick}>Sign up</MDBBtn>
     </MDBContainer>
     </div>
+    </>
   );
   
 }

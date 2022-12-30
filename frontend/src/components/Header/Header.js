@@ -1,12 +1,17 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import './Header.css'
 import {Container, Nav, Navbar,NavDropdown} from "react-bootstrap";
 let image = require('../../images/logo.png')
 
 
 const Header = () => {
-  
+  const navigate = useNavigate();
+
+  const handleLogout = ()=>{
+    localStorage.removeItem("userInfo")
+    navigate("/")
+  }
   return (
     <div className='App-header'>
       <img className = "App-logo" src = {image} alt = ""/>
@@ -19,8 +24,7 @@ const Header = () => {
             <NavDropdown title="My profile" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Edit</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item onClick = {()=>{localStorage.removeItem("userInfo")
-              }}>logout</NavDropdown.Item>
+              <NavDropdown.Item onClick = {handleLogout}>logout</NavDropdown.Item>
               
             </NavDropdown>
           </Nav>

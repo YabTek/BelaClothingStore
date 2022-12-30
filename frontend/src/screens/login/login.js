@@ -1,5 +1,6 @@
 import {useState,React, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
+import Header2 from '../../components/Header2/Header2'
 
 import './login.css'
 import { MDBContainer,MDBInput, MDBCheckbox, MDBBtn,}
@@ -45,6 +46,8 @@ const LoginPage = () => {
 
   }
   return ( 
+    <>
+    <Header2/>
     <div className  = "main">
        {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
 
@@ -67,6 +70,8 @@ const LoginPage = () => {
 
     </MDBContainer>
     </div>
+    </>
+
   );
   
 }

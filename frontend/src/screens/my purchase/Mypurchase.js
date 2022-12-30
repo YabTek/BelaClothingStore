@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../../components/Header/Header'
 import {Container,Row,Col } from 'react-bootstrap'
 import './Mypurchase.css'
 import axios from 'axios'
@@ -14,6 +15,9 @@ const MypurchasePage = () => {
  },[])
 
   return (
+    <>
+    <Header/>
+    
     <div className = "main">
       <h1 className = "heading text-center">Here are your list of purchases</h1>
       <Container> 
@@ -25,6 +29,8 @@ const MypurchasePage = () => {
         </Row>
       </Container>
     </div>
+    
+   </>
   )
 }
 

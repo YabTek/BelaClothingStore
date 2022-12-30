@@ -1,0 +1,18 @@
+.App-logo {
+    width: 90px;
+    height: 90px;
+    margin: 9px;
+    border-radius: 50%;
+  }
+  .App-header {
+    background-color: #8e57b6;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+  }
+  
+  

@@ -1,5 +1,4 @@
 import './bootstrap.min.css';
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Landing from './components/Landing/Landing';
 import LoginPage from './screens/login/login';
@@ -12,7 +11,6 @@ import UserList from './screens/admin/userList'
 function App() {
   return (
      <>
-    <Header/>
     <BrowserRouter>
     <Routes>
       <Route path = "/" element= {<Landing/>}/>
