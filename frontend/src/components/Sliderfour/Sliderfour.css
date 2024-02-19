@@ -1,0 +1,71 @@
+.intro4-wrapper {
+    margin: 0 auto; /* Center the wrapper horizontally */
+    max-width: 1350px; /* Maximum width of the container */
+    padding: 0 30px; 
+  }
+  
+  .intro4-container {
+    position: relative;
+    width: 100%;
+    height: 460px; 
+    border-radius: 25%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/bg2.png'); /* Adjust path to your image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+
+  }
+  .left-text{
+    font-family: 'Libre Baskerville';
+    font-size: 3rem;
+    font-weight: 500;
+    width: 30%;
+    padding: 40px 80px;
+  }
+  .center-text{
+    position: absolute;
+    top: 115px; 
+    left: 245px;
+    font-family: 'Kranky';
+    font-size: 3rem;
+    font-weight: bold;
+    text-align:center;
+    color: rgba(0, 0, 0, 0.6);
+
+  }
+  .right-text {
+    position: absolute;
+    top: 50px; 
+    right: 1px; 
+    width: 40%;
+    font-family: 'Lilita One';
+    font-size: 4rem;
+  }
+  
+  .bottom-rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 34%; /* Adjust height as needed */
+    background-color: rgba(179, 96, 8, 0.5); /* Transparent background color */
+    color: rgba(255, 255, 255, 0.608); /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px; 
+    font-family: 'Limelight';/* top-left, top-right, bottom-right, bottom-left */
+  }
+  .style-text{
+    font-size: 7rem;
+  }
