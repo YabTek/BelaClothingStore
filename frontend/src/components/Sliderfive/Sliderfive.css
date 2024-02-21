@@ -9,7 +9,8 @@
     width: 100%;
     height: 460px; 
     border-radius: 25%;
-    
+    animation: slideInRight 2s ease forwards; /* Initial animation from left to right */
+
   }
   
   .bg-img {
