@@ -1,0 +1,185 @@
+.bottom-container{
+    height: 80vh;
+    padding: 0px 50px;
+  }
+.bottom-intro{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 0px 50px;
+  }
+.bela{
+    height: 650px;
+
+}
+.bela-text{
+    font-family: 'Lily Script One';
+    font-size: 108px;
+    width: 10%;
+    padding-top: 100px;
+    padding-left: 80px;
+    color: #F40E7D;
+}
+
+  @media (max-width: 1500px) {
+    
+    .bela{
+      height: 580px;
+  
+  }
+  .bela-text{
+      font-size: 6rem;
+  }
+  }
+  @media (max-width: 1350px) {
+    .bottom-container{
+      height: 59vh;
+  
+    }
+    .bela{
+      height: 500px;
+  
+  }
+  .bela-text{
+      font-size: 5rem;
+      padding-left: 50px;
+
+  }
+  }
+   @media (max-width: 1150px) {
+    .bottom-container{
+      height: 55vh;
+  
+    }
+    .bela{
+      height: 450px;
+  
+  }
+  .bela-text{
+      font-size: 4rem;
+  }
+  .bottom-intro{
+    /* padding: 20px; */
+  }
+  }
+ @media (max-width: 1080px) {
+  .bottom-container{
+    height: 68vh;
+
+  }
+}
+ @media (max-width: 990px) {
+  .bottom-container{
+    height: 52vh;
+
+  }
+  .bela{
+    height: 330px;
+
+}
+.bela-text{
+    font-size: 3.7rem;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+}
+ @media (max-width: 870px) {
+  .bottom-container{
+    height: 40vh;
+
+  }
+  .bela{
+    height: 270px;
+
+}
+.bela-text{
+    font-size: 2.7rem;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+}
+  
+ @media (max-width: 705px) {
+  .bottom-container{
+    padding: 2px 1px;
+    height: 54vh;
+
+  }
+    .bela{
+      height: 270px;
+    }
+    .bela-text{
+      font-size: 2.5rem;
+      padding-left: 35px;
+      padding-top: 45px;
+    }
+} 
+ @media (max-width: 614px) {
+  .bottom-container{
+    padding: 2px 0px;
+    height: 44vh;
+
+  }
+    .bela{
+      height: 220px;
+    }
+    .bela-text{
+      font-size: 2.5rem;
+      padding-left: 30px;
+      padding-top: 40px;
+    }
+} 
+ @media (max-width: 550px) {
+  .bottom-container{
+    padding: 2px 0px;
+    height: 42vh;
+
+  }
+    .bela{
+      height: 210px;
+    }
+    .bela-text{
+      font-size: 2rem;
+      padding-left: 10px;
+      padding-top: 40px;
+    }
+} 
+
+ @media (max-width: 483px) {
+  .bottom-container{
+    padding: 2px 18px;
+    height: 36vh;
+
+  }
+.bottom-intro{
+    padding: 2px 5px;
+  }
+    .bela{
+      height: 180px;
+    }
+    .bela-text{
+      font-size: 2rem;
+      padding-left: 30px;
+      padding-top: 30px;
+    }
+} 
+ @media (max-width: 414px) {
+  .bottom-container{
+    padding: 2px 5px;
+    height: 34vh;
+
+  }
+.bottom-intro{
+    padding: 2px 5px;
+  }
+    .bela{
+      height: 170px;
+    }
+    .bela-text{
+      font-size: 1.7rem;
+      padding-left: 30px;
+      padding-top: 30px;
+    }
+} 

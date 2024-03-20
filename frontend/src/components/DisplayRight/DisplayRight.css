@@ -1,0 +1,123 @@
+.display-right-container{
+    margin-top: 60px;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(240, 227, 227,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+.captionTwo{
+    font-family: 'Licorice';
+    font-size: 6rem;
+    padding: 72px 70px;
+    color: #ec4f9b;
+    width: 40%;
+    text-shadow: 0 0px 24px rgb(235, 226, 57);
+}
+.right-clothes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 30px;
+    gap: 2rem;
+}
+.large-img-bg{
+   height: 22rem;
+   background-color: #F40E7D;
+   animation: slideLeft 6s infinite;
+   box-shadow: 0 0px 24px rgb(255, 255, 109);
+}
+.small-img-bg{
+   height: 15rem;
+   background-color:#F40E7D;
+   animation: slideRight 6s infinite;
+   box-shadow: 0 0px 24px rgb(255, 255, 109);
+
+}
+.large-img{
+    height: 22rem;
+
+}
+.small-img{
+    height: 15rem;
+
+}
+
+@media (max-width: 1350px) {
+    .captionTwo{
+      font-size: 3.5rem;
+      padding: 130px 60px;
+
+  }
+  }
+  @media (max-width: 1080px) {
+    .display-right-container{
+      margin-top: 40px;
+      width: 100%;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+  }
+    .captionTwo{
+      font-size: 2.5rem;
+      width: 100%;
+      text-align: center;
+      padding: 20px 60px;
+
+  }  
+  .large-img-bg{
+    height: 12rem;
+ }
+ .small-img-bg{
+    height: 8rem;
+ }
+ .large-img{
+  height: 12rem;
+
+}
+.small-img{
+  height: 8rem;
+
+}
+.right-clothes{
+  margin-left: 35px; 
+  margin-bottom: 30px;
+
+}
+  }
+  @media (max-width: 576px) {
+    .display-right-container{
+      margin-top: 20px;
+      width: 100%;
+      height: 328px;
+      display: flex;
+      flex-direction: column;
+  }
+    .captionTwo{
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+      padding: 10px 60px;
+
+  }  
+  .large-img-bg{
+    height: 12rem;
+ }
+ .small-img-bg{
+    height: 8rem;
+ }
+ .large-img{
+  height: 12rem;
+
+}
+.small-img{
+  height: 8rem;
+
+}
+.right-clothes{
+  margin-left: 120px; 
+  margin-bottom: 40px;
+}
+
+  }
