@@ -1,64 +1,116 @@
 .intro2-wrapper {
-    margin: 0 auto; 
-    max-width: 1350px; 
-    padding: 0 30px; 
-  }
-  
-  .intro2-container {
-    position: relative;
-    width: 100%;
-    height: 500px; 
-    border-radius: 25%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .backgroun-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../images/bg3.png'); 
-    background-size: cover; /* Adjust background size */
-    background-position: center;
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    border-radius: 20px;
+  margin: 0 100px; 
 }
 
-  .text {
-    width: 90%; 
-    max-width: 500px;
-    padding: 50px;
-    color: rgba(0, 0, 0, 0.679);
-    font-family: 'Lilita One';
-    font-size: 4rem;
-    
-  }
-  .rectangle1 {
-    background-color: rgba(216, 196, 66, 0.5); 
-    position: absolute;
-    top: 100px; 
-    right: 100px; 
-    padding: 0px 40px;
-    font-family: 'Libre Bodoni';
-    font-size: 2rem;
-    color: white;
-    border-radius: 14px;
-    animation: circle1-animation 2s infinite;
+.intro2-container {
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  border-radius: 25%;
+  display: flex;
+  justify-content: space-between;
+  animation: slideInLeft 2s ease forwards; /* Initial animation from left to right */
 
-  }
-  .rectangle2 {
-    background-color: rgba(51, 82, 234, 0.4); 
-    position: absolute;
-    top: 340px; 
-    right: 500px; 
-    padding: 2px 18px;
-    font-family: 'Libre Bodoni';
-    color: white;
-    font-size: 2rem;
-    border-radius: 14px;
-    text-align: center;
-    animation: circle1-animation 2s infinite;
+}
 
+.backgroun-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/bg3.png'); 
+  background-size: cover; /* Adjust background size */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  border-radius: 20px;
+}
+
+.text {
+  width: 90%; 
+  max-width: 500px;
+  padding: 40px;
+  color: rgba(0, 0, 0, 0.679);
+  font-family: 'Lilita One';
+  font-size: 4.5rem;
+  
+}
+.rectangle1 {
+  background-color: rgba(216, 196, 66, 0.5); 
+  position: absolute;
+  top: 100px; 
+  right: 100px; 
+  padding: 0px 40px;
+  font-family: 'Libre Bodoni';
+  font-size: 2rem;
+  color: white;
+  border-radius: 14px;
+  animation: circle1-animation 2s infinite;
+
+}
+.rectangle2 {
+  background-color: rgba(51, 82, 234, 0.4); 
+  position: absolute;
+  top: 340px; 
+  right: 500px; 
+  padding: 2px 18px;
+  font-family: 'Libre Bodoni';
+  color: white;
+  font-size: 2rem;
+  border-radius: 14px;
+  text-align: center;
+  animation: circle1-animation 2s infinite;
+
+}
+@media screen and (min-width:1080px) and (max-width:1380px){  
+  .rectangle2{
+    display: none;
   }
+}
+@media (max-width: 1080px) {
+  .intro2-wrapper{
+    margin: 0 2.4rem;
+  }
+  .intro2-container {
+    height: 350px; 
+  }
+
+  .text{
+    font-size: 3.8rem;
+    padding: 6px 50px;
+  
+    width: 60%;
+  }
+  .rectangle2{
+    display: none;
+    }
+    .rectangle1{
+      top: 160px;
+      right: 120px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){  
+  .text{
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .intro2-wrapper{
+    margin: 0 2.3rem;
+  }
+  .intro2-container {
+    height: 200px; 
+  }
+  .text{
+    display: none;
+  }
+  .rectangle1{
+    font-size: 14px;
+    border-radius: 8px;
+    right: 88px;
+    top: 120px;
+  }
+  .rectangle2{
+    display: none;
+    }
+}

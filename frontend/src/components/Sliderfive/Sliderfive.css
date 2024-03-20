@@ -1,121 +1,167 @@
 .intro5-wrapper {
-    margin: 0 auto; /* Center the wrapper horizontally */
-    max-width: 1350px; /* Maximum width of the container */
-    padding: 0 30px; 
+  margin: 0 100px; 
+}
+
+
+.intro5-container {
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  border-radius: 25%;
+  animation: slideInRight 2s ease forwards; /* Initial animation from left to right */
+
+}
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/bg.png'); /* Adjust path to your image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+
+}
+
+.text1 {
+  position: absolute;
+  top: 10px; 
+  right: 190px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text2 {
+  position: absolute;
+  top: 120px; 
+  right: 60px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text3 {
+  position: absolute;
+  top: 230px; 
+  right: 140px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text4 {
+  position: absolute;
+  top: 330px; 
+  right: 80px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text5 {
+  position: absolute;
+  top: 320px; 
+  right: 340px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text6 {
+  position: absolute;
+  top: 150px; 
+  right: 360px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text8 {
+  position: absolute;
+  top: 30px; 
+  right: 600px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text9 {
+  position: absolute;
+  top: 50px; 
+  right: 400px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.text10 {
+  position: absolute;
+  top: 300px; 
+  right: 600px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Licorice';
+  font-size: 3.5rem;
+}
+.its{
+  font-family: 'Liu Jian Mao Cao';
+  font-size:4rem;
+  color: white;
+  padding-top: 90px;
+  padding-left: 30px;
+
+}
+.girl{
+  font-family: 'Lexend Zetta';
+  color: rgba(255, 255, 22, 0.83);
+  font-size: 4.5rem;
+  /* padding-left: 60px; */
+}
+
+.thing{
+  font-family: 'Lexend Zetta';
+  color: rgba(255, 255, 22, 0.83);
+  padding-left: 70px;
+  font-size: 4.5rem;
+}
+@media screen and (min-width:1080px) and (max-width:1150px){  
+  .text6{
+    display: none;
   }
-  
+}
+@media (max-width: 1080px) {
+  .intro5-wrapper{
+    margin: 0 2.4rem;
+  }
   .intro5-container {
-    position: relative;
-    width: 100%;
-    height: 460px; 
-    border-radius: 25%;
-    animation: slideInRight 2s ease forwards; /* Initial animation from left to right */
-
+    height: 370px; 
   }
-  
-  .bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../images/bg.png'); /* Adjust path to your image */
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-
+  .text4, .text5{
+    display: none;
   }
-  .text1 {
-    position: absolute;
-    top: 10px; 
-    right: 190px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
+  .text6{
+   display: none;
   }
-  .text2 {
-    position: absolute;
-    top: 120px; 
-    right: 60px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
+}
+@media (max-width: 830px) {
+  .text8, .text10{
+    display: none;
   }
-  .text3 {
-    position: absolute;
-    top: 230px; 
-    right: 140px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
+}
+@media (max-width: 576px) {
+  .intro5-wrapper{
+    margin: 0 2rem;
   }
-  .text4 {
-    position: absolute;
-    top: 330px; 
-    right: 80px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
+  .intro5-container {
+    height: 200px; 
   }
-  .text5 {
-    position: absolute;
-    top: 320px; 
-    right: 340px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
-  }
-  .text6 {
-    position: absolute;
-    top: 200px; 
-    right: 400px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
-  }
-  .text8 {
-    position: absolute;
-    top: 30px; 
-    right: 600px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
-  }
-  .text9 {
-    position: absolute;
-    top: 50px; 
-    right: 400px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
-  }
-  .text10 {
-    position: absolute;
-    top: 300px; 
-    right: 600px; 
-    color: white;
-    font-family: 'Licorice';
-    font-size: 3.5rem;
+  .text{
+    display: none;
   }
   .its{
-    font-family: 'Liu Jian Mao Cao';
-    font-size:4rem;
-    color: white;
-    padding-top: 90px;
-    padding-left: 30px;
-
+    font-size: 3rem;
+    padding-top: 10px;
   }
   .girl{
-    font-family: 'Lexend Zetta';
-    color: rgba(255, 255, 22, 0.83);
-    font-size: 4.5rem;
-    /* padding-left: 60px; */
+    font-size: 3.5rem;
+
   }
-  
   .thing{
-    font-family: 'Lexend Zetta';
-    color: rgba(255, 255, 22, 0.83);
-    padding-left: 70px;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
-  
+}
+

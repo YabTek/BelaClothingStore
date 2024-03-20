@@ -11,9 +11,9 @@ const Sliderone = () => {
             <p className="small-text">A Style For Every Story</p>
           </div>
           <div className="circle-container"> 
-            <div className="circle circle1"><p>Fashion <br/>In <br/> Life</p></div>
-            <div className="circle circle2"><p>Fashion <br/>In <br/> Life</p></div>
-            <div className="circle circle3"><p>Fashion <br/>In <br/> Life</p></div>
+            <div className="circle circle1"><p>Fashion</p></div>
+            <div className="circle circle2"><p>Fashion </p></div>
+            <div className="circle circle3"><p>Fashion</p></div>
             
            </div>
         </div>
