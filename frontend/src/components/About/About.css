@@ -1,0 +1,179 @@
+.about{
+    text-align: center;
+    padding: 60px 100px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.about h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.paragraph{
+    font-size: 1.2rem;
+    padding: 0px 44px;  
+    text-align: match-parent;
+}
+.about-detail {
+    height: 108px;
+    width: 100%;
+    background-color: #B9377B;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.delivery-detail {
+    display: flex;
+    gap: 15px;
+    flex: 1; 
+    padding-left: 4.7rem;
+}
+
+
+.delivery-detail img{
+    height: 70px;
+    margin-top: 12px;
+}
+.delivery-text{
+    padding: 17px 10px;
+    color: white;
+    text-align: start;
+}
+
+.delivery-text p{
+    font-size: large;
+}
+
+.day-img{
+    height: 66px !important;
+    margin-top: 14px !important;
+    /* margin-left: 20px */
+}
+.line {
+    margin-top: 20px;
+    height: 12px; /* Adjust line thickness as needed */
+    background: linear-gradient(to right, #881b50 25%, transparent 25%, transparent 50%, #F40E7D 50%, #F40E7D 75%, transparent 75%, transparent);
+    background-size: 4px 100%; /* Adjust zigzag size as needed */
+    animation: moveZigzag 4s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes moveZigzag {
+    100% {
+      background-position: 9px 0;
+    }
+  }
+@media (max-width:1150px) {
+    .about{
+        padding: 20px 60px;
+    }
+    .about h1{
+        font-size: 2rem;
+    }
+    .more-info{
+        display: none;
+    } 
+    .delivery-text h4{
+        font-size: 14px;
+    }
+    .delivery-text p{
+        font-size: 12px;
+    }
+    .about-detail {
+        height: 80px;
+        
+    }
+    .paragraph{
+        padding: 0 2px;
+        font-size: 1.3rem;
+    }
+    .delivery-detail img{
+        height: 30px;
+    }
+    .delivery-detail{
+        gap: 2px;
+        padding-left: 4.5rem;
+
+    }
+    
+    .day-img{
+        height: 28px !important;
+        
+    }
+}
+
+@media (max-width:768px) {
+    .about{
+        padding: 20px 40px;
+    }
+    .about h1{
+        font-size: 1.6rem;
+    }
+    .more-info{
+        display: none;
+    } 
+    .delivery-text h4{
+        font-size: 14px;
+    }
+    .delivery-text p{
+        font-size: 8px;
+    }
+    .about-detail {
+        height: 80px;
+        
+    }
+    .paragraph{
+        padding: 0 2px;
+        font-size: 1.1rem;
+    }
+    .delivery-detail img{
+        height: 20px;
+    }
+    .delivery-detail{
+        gap: 2px;
+        padding-left: 1rem;
+
+    }
+    
+    .day-img{
+        height: 25px !important;
+        
+    }
+}
+@media (max-width:576px) {
+    .about{
+        padding: 20px 10px;
+    }
+    .about h1{
+        font-size: larger;
+    }
+    .more-info{
+        display: none;
+    } 
+    .delivery-text h4{
+        font-size: 8px;
+    }
+    .delivery-text p{
+        font-size: 6px;
+    }
+    .about-detail {
+        height: 60px;
+        
+    }
+    .paragraph{
+        padding: 0 2px;
+        font-size: 0.6rem;
+    }
+    .delivery-detail img{
+        height: 20px;
+    }
+    .delivery-detail{
+        gap: 2px;
+        padding-left: 1rem;
+
+    }
+    
+    .day-img{
+        height: 25px !important;
+        
+    }
+}
