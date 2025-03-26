@@ -1,0 +1,187 @@
+.sample-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #0011fe34;
+    color: white;
+    border-radius: 30px;
+    margin: 120px 90px;
+    /* height: 600px; */
+  }
+  
+  .sample-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Miltonian';
+    color: black;
+    /* padding-bottom: 24px;
+    padding-top: 80px; */
+    padding-right: 800px;
+  }
+  .sample-emoji {
+    font-size: 3xl;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-right: 810px;
+  }
+  .center-img{
+    position: absolute;
+    height: 370px;
+    width: 370px;
+    top: 50px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.54);
+  }
+  .sample-description {
+    font-size: lg;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+  
+  .sample-button {
+    padding: 6px 10px;
+    margin-bottom: 24px;
+    background-color: #FFFEED;
+    color: #524BA7;
+    font-size: 2xl;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sample-button:hover {
+    background-color: #E7E261;
+  }
+  
+  .pink-div {
+    width: 100%; 
+    height: 385px;
+    background-color: #FF0B80;
+    border-radius: 20px;
+    padding-left: 80px;
+  }
+  .hoddie{
+    font-family: 'Marko One';
+  }
+  .title1{
+    padding-top: 60px;
+  }
+  
+  .price{
+    font-family: 'Marcellus';
+    font-size: 2rem;
+  }
+  .pink-div button{
+    border: none;
+    padding: 15px 100px;
+    font-family: 'Marcellus';
+    font-size: 1.5rem;
+    color: #F40E7D;
+    background-color: #E0FFFB;
+    border-radius: 16px;
+    margin-top: 10px;
+  }
+  .pink-div button:hover{
+    background-color: #b7fcf3;
+
+  }
+  .hoddies {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Add space between items */
+  }
+  
+  .hoddie-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; 
+    background-color: #B9377B;
+    border-radius: 20px;
+    padding: 20px 20px;
+  }
+  .hoddie-item img{
+    height: 100px;
+  }
+  
+  .vertical-line {
+    width: 2px;
+    height: 140px; /* Adjust height as needed */
+    background-color: yellow;
+    margin: 0 20px; /* Adjust space between line and hoddie-details */
+  }
+  
+  .hoddie-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hoddie-details h5 {
+    font-family: 'Marko One';
+  }
+  
+  .hoddie-details p{
+    font-family: 'Marcellus'
+  }
+  
+  .hoddie-details button{
+    border: none;
+    padding: 5px 2px;
+    font-family: 'Marcellus';
+    font-size: 0.9rem;
+    color: #F40E7D;
+    background-color: #E0FFFB;
+    border-radius: 8px;
+  }
+  
+  .hoddie-details button:hover{
+    background-color: #b7fcf3;
+
+  }
+  @media (max-width: 576px) {
+    .sample-container {
+      margin: 12px 9px;
+    }
+    .center-img{
+      /* display: none; */
+      margin: auto;
+      display: block;
+      height: 200px;
+      width: 200px;
+    } 
+    .sample-emoji{
+      display: none;
+    }
+    .sample-title{
+      font-size: 1rem;
+      padding-right: 170px;
+    }
+    .hoddie{
+      display: none;
+    }
+    .price{
+      display: none;
+    }
+    .sample-description {
+      display: none;
+      /* font-size: lg;
+      text-align: center;
+      padding-bottom: 12px; */
+    }
+    .hoddies{
+      display: none;
+    }
+    .pink-div button{
+      display: none;
+    }
+    .pink-div {
+      height: 385px;
+      padding-left: 80px;
+    }
+  }
+

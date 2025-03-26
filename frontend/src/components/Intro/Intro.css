@@ -1,0 +1,23 @@
+
+  /* .landing-page .slider {
+    animation: slideInRight 1s ease forwards;
+  } */
+  
+  @keyframes slideInRight {
+    from {
+      left: -100%; 
+    }
+    to {
+      left: 0; 
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      left: 100%; 
+    }
+    to {
+      left: 0; 
+    }
+  }
+  
