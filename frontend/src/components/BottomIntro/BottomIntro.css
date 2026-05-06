@@ -1,185 +1,118 @@
-.bottom-container{
-    height: 80vh;
-    padding: 0px 50px;
-  }
-.bottom-intro{
-    display: flex;
-    justify-content: space-between;
-    height: 80vh;
-    padding: 0px 50px;
-  }
-.bela{
-    height: 650px;
 
+.bottom-container {
+  min-height: 58vh;
+  padding: 24px 50px;
+  background: #ffeaf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.bela-text{
-    font-family: 'Lily Script One';
-    font-size: 108px;
-    width: 10%;
-    padding-top: 100px;
-    padding-left: 80px;
-    color: #F40E7D;
+
+.bottom-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  max-width: 1400px;
+  padding: 24px;
+  border-radius: 24px;
+  background: #fde0ec;
+}
+
+.bela {
+  height: 650px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 18px;
+  border: 5px solid #f7a8cf;
+  box-shadow: 0 18px 40px rgba(196, 30, 125, 0.3), 0 0 0 8px rgba(255, 205, 228, 0.7);
+  transition: all 0.3s ease;
+}
+
+.bela:hover {
+  box-shadow: 0 24px 48px rgba(196, 30, 125, 0.36), 0 0 0 10px rgba(255, 186, 219, 0.8);
+  transform: translateY(-5px);
+}
+
+.bela-text {
+  font-family: 'Lily Script One', cursive;
+  font-size: 6rem;
+  color: #c41e7d;
+  font-weight: 700;
+  line-height: 1.2;
+  flex: 1;
+  min-width: 300px;
+  padding: 22px 26px;
+  border-radius: 20px;
+  background: #fde0ec;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
   @media (max-width: 1500px) {
     
-    .bela{
+    .bela {
       height: 580px;
-  
-  }
-  .bela-text{
+    }
+    .bela-text {
       font-size: 6rem;
   }
   }
+
   @media (max-width: 1350px) {
-    .bottom-container{
-      height: 59vh;
-  
+    .bottom-container {
+      min-height: 52vh;
     }
-    .bela{
+    .bela {
       height: 500px;
-  
-  }
-  .bela-text{
-      font-size: 5rem;
-      padding-left: 50px;
-
-  }
-  }
-   @media (max-width: 1150px) {
-    .bottom-container{
-      height: 55vh;
-  
     }
-    .bela{
-      height: 450px;
-  
-  }
-  .bela-text{
-      font-size: 4rem;
-  }
-  .bottom-intro{
-    /* padding: 20px; */
-  }
-  }
- @media (max-width: 1080px) {
-  .bottom-container{
-    height: 68vh;
-
-  }
-}
- @media (max-width: 990px) {
-  .bottom-container{
-    height: 52vh;
-
-  }
-  .bela{
-    height: 330px;
-
-}
-.bela-text{
-    font-size: 3.7rem;
-    padding-top: 40px;
-    padding-left: 40px;
-}
-
-}
- @media (max-width: 870px) {
-  .bottom-container{
-    height: 40vh;
-
-  }
-  .bela{
-    height: 270px;
-
-}
-.bela-text{
-    font-size: 2.7rem;
-    padding-top: 60px;
-    padding-left: 20px;
-}
-
-}
-  
- @media (max-width: 705px) {
-  .bottom-container{
-    padding: 2px 1px;
-    height: 54vh;
-
-  }
-    .bela{
-      height: 270px;
+    .bela-text {
+      font-size: 4.5rem;
     }
-    .bela-text{
+  }
+
+  @media (max-width: 1080px) {
+    .bottom-container {
+      min-height: 46vh;
+      padding: 18px 30px;
+    }
+    .bela {
+      height: 400px;
+    }
+    .bela-text {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .bottom-container {
+      min-height: auto;
+      padding: 16px 20px;
+    }
+    .bottom-intro {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    .bela {
+      height: 300px;
+    }
+    .bela-text {
       font-size: 2.5rem;
-      padding-left: 35px;
-      padding-top: 45px;
+      text-align: center;
+      padding: 16px 18px;
     }
-} 
- @media (max-width: 614px) {
-  .bottom-container{
-    padding: 2px 0px;
-    height: 44vh;
+  }
 
+  @media (max-width: 480px) {
+    .bottom-container {
+      padding: 12px 15px;
+    }
+    .bela {
+      height: 200px;
+    }
+    .bela-text {
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 12px 14px;
+    }
   }
-    .bela{
-      height: 220px;
-    }
-    .bela-text{
-      font-size: 2.5rem;
-      padding-left: 30px;
-      padding-top: 40px;
-    }
-} 
- @media (max-width: 550px) {
-  .bottom-container{
-    padding: 2px 0px;
-    height: 42vh;
-
-  }
-    .bela{
-      height: 210px;
-    }
-    .bela-text{
-      font-size: 2rem;
-      padding-left: 10px;
-      padding-top: 40px;
-    }
-} 
-
- @media (max-width: 483px) {
-  .bottom-container{
-    padding: 2px 18px;
-    height: 36vh;
-
-  }
-.bottom-intro{
-    padding: 2px 5px;
-  }
-    .bela{
-      height: 180px;
-    }
-    .bela-text{
-      font-size: 2rem;
-      padding-left: 30px;
-      padding-top: 30px;
-    }
-} 
- @media (max-width: 414px) {
-  .bottom-container{
-    padding: 2px 5px;
-    height: 34vh;
-
-  }
-.bottom-intro{
-    padding: 2px 5px;
-  }
-    .bela{
-      height: 170px;
-    }
-    .bela-text{
-      font-size: 1.7rem;
-      padding-left: 30px;
-      padding-top: 30px;
-    }
-} 
