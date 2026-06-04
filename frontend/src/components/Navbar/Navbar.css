@@ -1,80 +1,267 @@
-.navbar{
+.navbar {
+    background: #fed5e7;
+    backdrop-filter: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2.4rem;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    height: 84px;
+    background: #f5dde8;
+    border-radius: 0;
+    box-shadow: none;
     border: none;
-    max-width: 100%; /* Maximum width of the container */
-    margin: 0 100px; 
+}
 
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #c41e7d;
+    min-width: 220px;
+    text-decoration: none;
+    padding-left: 0;
 }
-.img{
-    height: 70px;
-    width: 14rem;
-    margin-top: 5px;
+
+.logo-image {
+    height: 50px;
+    width: auto;
 }
-.button{
+
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #c41e7d 0%, #e91e63 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-left: auto;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #4a2a3c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: static;
+    padding: 10px 6px;
+    border-bottom: none;
+}
+
+.nav-link:hover {
+    color: #c41e7d;
+    transform: translateY(-1px);
+}
+
+.nav-link::after {
+    content: none;
+}
+
+.nav-btn {
+    padding: 11px 24px;
     border: none;
-    background-color: rgba(255, 232, 232, 0.363);
-    padding: 0 16px;
-    color: #f02b94;
-    font-size: 24px;
-    /* text-shadow: 0px 0px 2px black; */
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    /* font-family:'Limelight'; */
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
 }
-.button:hover{
-    color: rgb(113, 148, 223)
-}
-.icon{
-    height: 30px;
-    width: 30px;
-    margin-right: 12px;
-    margin-left: 12px;
-    /* margin-bottom: 2px; */
-}
-.icon:hover{
-    box-shadow: 2px 2px 4px rgb(6, 84, 252);
-}
-@media (max-width: 1080px) {
-    .navbar{
-        margin: 0 2.3rem;
-    
-    }
-    .button{
-        font-size: 18px;
-        text-shadow: 0px 0px 1px black;
-        padding: 0 8px;
 
-    }
-    .img{
-        height: 50px;
-        width: 8.8rem;
-        margin-bottom: 2px;
+.signup-btn {
+    background-color: transparent;
+    border: 2px solid #c41e7d;
+    color: #c41e7d;
+}
 
+.signup-btn:hover {
+    background-color: #c41e7d;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.login-btn {
+    background-color: #c41e7d;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #a01668;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(196, 30, 125, 0.3);
+}
+
+.contact-icons {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    padding-right: 0;
+    margin-left: 1rem;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(196, 30, 125, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    background-color: #c41e7d;
+    transform: translateY(-2px);
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    filter: brightness(0.7);
+    transition: all 0.3s ease;
+}
+
+.icon-link:hover .icon {
+    filter: brightness(1);
+    filter: invert(1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #c41e7d;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 1.1rem;
+        height: 60px;
+        border-radius: 0;
+        justify-content: space-between;
     }
-    .icon{
-        height: 20px;
-        width: 20px;
+
+    .navbar-logo {
+        min-width: 140px;
+        gap: 8px;
     }
-  }
-@media (max-width: 576px) {
-    .navbar{
-        margin: 0 2.3rem;
+
+    .logo-image {
+        height: 100px;
     }
-    .button{
-        font-size: 9px;
-        padding: 0 6px;
+
+
+    .hamburger {
+        display: flex;
+        order: 3;
     }
-    .img{
-        height: 28px;
-        width: 4.5rem;
-        margin-bottom: 3.9px;
+
+    .contact-icons {
+        display: none;
     }
-    .icon{
-        height: 10px;
-        width: 10px;
-        margin: auto 5px;
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background: #ffeaf3;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: none;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        border-bottom: none;
+        justify-content: flex-start;
+        border-radius: 0;
+        margin-left: 0;
     }
-    
-  }
-  
-  
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .nav-btn {
+        width: 80%;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 0.75rem;
+        border-radius: 0;
+    }
+
+    .logo-image {
+        height: 35px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .hamburger span {
+        width: 22px;
+    }
+
+    .nav-menu {
+        top: 60px;
+        padding: 1.5rem 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
