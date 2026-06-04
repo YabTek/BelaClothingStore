@@ -1,0 +1,41 @@
+.promo-strip {
+  width: auto;
+  margin: 10px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.promo-card {
+  background: linear-gradient(140deg, #fff9fc 0%, #ffe2ef 100%);
+  border: 1px solid #f7bfd9;
+  border-radius: 16px;
+  padding: 18px 16px;
+  box-shadow: 0 8px 22px rgba(196, 30, 125, 0.12);
+}
+
+.promo-card h4 {
+  color: #9a1f62;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.promo-card p {
+  color: #6f4d60;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .promo-strip {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 8px 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo-strip {
+    margin: 8px 0.8rem;
+  }
+}
