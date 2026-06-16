@@ -1,5 +1,5 @@
 .intro5-wrapper {
-  margin: 0 100px; 
+  margin: 0 40px;
 }
 
 
@@ -7,8 +7,10 @@
   position: relative;
   width: 100%;
   height: 500px; 
-  border-radius: 25%;
-  animation: slideInRight 2s ease forwards; /* Initial animation from left to right */
+  border-radius: 32px;
+  animation: slideInRight 1.3s ease forwards;
+  overflow: hidden;
+  box-shadow: 0 22px 44px rgba(196, 30, 125, 0.18);
 
 }
 
@@ -18,10 +20,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../images/bg.png'); /* Adjust path to your image */
+  background-image: linear-gradient(120deg, rgba(87, 13, 49, 0.42) 0%, rgba(255, 233, 244, 0.08) 100%), url('../../images/bg.png');
   background-size: cover;
   background-position: center;
-  border-radius: 20px;
+  border-radius: 32px;
 
 }
 
@@ -29,7 +31,7 @@
   position: absolute;
   top: 10px; 
   right: 190px; 
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 240, 247, 0.92);
   font-family: 'Licorice';
   font-size: 3.5rem;
 }
@@ -98,23 +100,24 @@
   font-size: 3.5rem;
 }
 .its{
-  font-family: 'Liu Jian Mao Cao';
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size:4rem;
-  color: white;
+  color: #fff4fa;
+    text-shadow: 0 8px 20px rgba(45, 6, 22, 0.42);
   padding-top: 90px;
   padding-left: 30px;
 
 }
 .girl{
   font-family: 'Lexend Zetta';
-  color: rgba(255, 255, 22, 0.83);
+  color: #ffd3ea;
   font-size: 4.5rem;
   /* padding-left: 60px; */
 }
 
 .thing{
   font-family: 'Lexend Zetta';
-  color: rgba(255, 255, 22, 0.83);
+  color: #ffe0f0;
   padding-left: 70px;
   font-size: 4.5rem;
 }
@@ -125,7 +128,7 @@
 }
 @media (max-width: 1080px) {
   .intro5-wrapper{
-    margin: 0 2.4rem;
+    margin: 0 1.25rem;
   }
   .intro5-container {
     height: 370px; 
@@ -144,7 +147,7 @@
 }
 @media (max-width: 576px) {
   .intro5-wrapper{
-    margin: 0 2rem;
+    margin: 0 0.8rem;
   }
   .intro5-container {
     height: 200px; 
