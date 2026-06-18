@@ -1,13 +1,15 @@
 .intro3-wrapper {
-  margin: 0 100px; 
+  margin: 0 40px;
 }
 
 .intro3-container {
   position: relative;
   width: 100%;
   height: 500px; 
-  border-radius: 25%;
-  animation: slideInRight 2s ease forwards; /* Initial animation from left to right */
+  border-radius: 32px;
+  animation: slideInRight 1.3s ease forwards;
+  overflow: hidden;
+  box-shadow: 0 22px 44px rgba(196, 30, 125, 0.16);
 
 }
 
@@ -17,11 +19,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../images/bg1.png'); 
+  background-image: linear-gradient(120deg, rgba(111, 27, 76, 0.28) 0%, rgba(255, 235, 244, 0.1) 100%), url('../../images/bg1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
-  border-radius: 20px;
+  border-radius: 32px;
 }
 
 
@@ -32,14 +34,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #d8ebd9cc;
+  color: #fff8fc;
   font-size: 28px;
   text-align: center;
   font-family: 'Maiden Orange';
 }
 
 .circle4 {
-  background-color: rgba(216, 196, 66, 0.3); 
+  background-color: rgba(255, 227, 239, 0.25);
   position: absolute;
   top: 300px; 
   right: 480px; 
@@ -47,7 +49,7 @@
 }
 
 .circle5 {
-  background-color: rgba(51, 71, 255, 0.2); 
+  background-color: rgba(208, 94, 164, 0.22);
   position: absolute;
   top: 120px; 
   right: 150px; 
@@ -55,7 +57,7 @@
 }
 
 .circle6 {
-  background-color: rgb(0, 242, 255,0.1); 
+  background-color: rgba(255, 248, 251, 0.18);
   position: absolute;
   top: 160px; 
   right: 900px; 
@@ -94,7 +96,7 @@
 }
 @media (max-width: 1080px) {
   .intro3-wrapper{
-    margin: 0 2.4rem;
+    margin: 0 1.25rem;
   }
   .intro3-container {
     height: 370px; 
@@ -105,7 +107,7 @@
  }
  @media (max-width: 576px) {
   .intro3-wrapper{
-    margin: 0 2rem;
+    margin: 0 0.8rem;
   }
   .intro3-container {
     height: 180px; 
