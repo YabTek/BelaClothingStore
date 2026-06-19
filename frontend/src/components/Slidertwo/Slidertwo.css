@@ -1,15 +1,17 @@
 .intro2-wrapper {
-  margin: 0 100px; 
+  margin: 0 40px;
 }
 
 .intro2-container {
   position: relative;
   width: 100%;
   height: 500px; 
-  border-radius: 25%;
+  border-radius: 32px;
   display: flex;
   justify-content: space-between;
-  animation: slideInLeft 2s ease forwards; /* Initial animation from left to right */
+  animation: slideInLeft 1.3s ease forwards;
+  overflow: hidden;
+  box-shadow: 0 22px 44px rgba(196, 30, 125, 0.18);
 
 }
 
@@ -19,24 +21,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../images/bg3.png'); 
-  background-size: cover; /* Adjust background size */
+  background-image: linear-gradient(120deg, rgba(255, 247, 251, 0.15) 0%, rgba(196, 30, 125, 0.28) 100%), url('../../images/bg3.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat; /* Prevent image from repeating */
-  border-radius: 20px;
+  border-radius: 32px;
 }
 
 .text {
   width: 90%; 
   max-width: 500px;
   padding: 40px;
-  color: rgba(0, 0, 0, 0.679);
-  font-family: 'Lilita One';
-  font-size: 4.5rem;
+  color: rgba(255, 248, 251, 0.94);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 4.2rem;
+  line-height: 1.05;
+  text-shadow: 0 8px 24px rgba(62, 8, 32, 0.48);
   
 }
 .rectangle1 {
-  background-color: rgba(216, 196, 66, 0.5); 
+  background-color: rgba(201, 60, 138, 0.55);
   position: absolute;
   top: 100px; 
   right: 100px; 
@@ -44,20 +48,22 @@
   font-family: 'Libre Bodoni';
   font-size: 2rem;
   color: white;
-  border-radius: 14px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(115, 18, 64, 0.24);
   animation: circle1-animation 2s infinite;
 
 }
 .rectangle2 {
-  background-color: rgba(51, 82, 234, 0.4); 
+  background-color: rgba(255, 236, 246, 0.38);
   position: absolute;
   top: 340px; 
   right: 500px; 
   padding: 2px 18px;
   font-family: 'Libre Bodoni';
-  color: white;
+  color: #7e2054;
   font-size: 2rem;
-  border-radius: 14px;
+  border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(115, 18, 64, 0.14);
   text-align: center;
   animation: circle1-animation 2s infinite;
 
@@ -69,7 +75,7 @@
 }
 @media (max-width: 1080px) {
   .intro2-wrapper{
-    margin: 0 2.4rem;
+    margin: 0 1.25rem;
   }
   .intro2-container {
     height: 350px; 
@@ -96,7 +102,7 @@
 }
 @media (max-width: 576px) {
   .intro2-wrapper{
-    margin: 0 2.3rem;
+    margin: 0 0.8rem;
   }
   .intro2-container {
     height: 200px; 
